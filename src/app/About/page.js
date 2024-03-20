@@ -15,8 +15,9 @@ import Commonbtn from '../commonbtn/Commonbtn';
 const Page = () => {
   return (
     <div className=' bg-[yellow] h-screen flex items-center justify-center flex-col gap-5'>
+      <div className=' container '>
       <Swiper
-        // Install Swiper modules
+
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
         spaceBetween={35}
         slidesPerView={3.5}
@@ -50,6 +51,8 @@ const Page = () => {
 
       <Link href="/" className="absolute top-4 start-4 fs-[35px] font-semibold text-black">HOME
       </Link>
+    
+      </div>
       <Commonbtn text='SWIPER'/>
     </div>
   );
